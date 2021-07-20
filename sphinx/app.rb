@@ -12,7 +12,7 @@ get('/question1') do
   erb(:question1)
 end
 
-post('/result1') do
+post('/question2') do
   if params[:answer].downcase == "memory"
     erb(:question2)
   else
@@ -20,7 +20,7 @@ post('/result1') do
   end
 end
 
-post('/result2') do
+post('/question3') do
   if params[:answer].downcase == "time"
     erb(:question3)
   else
@@ -28,7 +28,7 @@ post('/result2') do
   end
 end
 
-post('/result3') do
+post('/question4') do
   if params[:answer].downcase == "death"
     erb(:question4)
   else
@@ -36,7 +36,7 @@ post('/result3') do
   end
 end
 
-post('/result4') do
+post('/question5') do
   if params[:answer].downcase == "hummingbird"
     erb(:question5)
   else
@@ -44,7 +44,7 @@ post('/result4') do
   end
 end
 
-post('/result5') do
+post('/result') do
   if params[:answer].downcase == "fish"
     erb(:success)
   else
